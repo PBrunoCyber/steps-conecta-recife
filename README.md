@@ -138,7 +138,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-all.zip
         Selecione as permissões que o token precisa. Para acessar repositórios privados, você geralmente precisa das seguintes permissões:
         repo (Acesso completo aos repositórios privados)
         read:org (Ler a organização, se aplicável)
-    5. Exemplo > "react-native-smisdk-plugin": git+https://ghp_eNXyjAuETs8o7k0sIP9rZTh1NioUmb04H3Q8@github.com/PBrunoCyber/sd-react-native-smisdk-plugin.git#main (não use esse trecho, pois não vai funcionar) 
+    5. Exemplo > "react-native-smisdk-plugin": ```git+https://ghp_eNXyjAuETs8o7k0sIP9rZTh1NioUmb04H3Q8@github.com/PBrunoCyber/sd-react-native-smisdk-plugin.git#main``` (não use esse trecho, pois não vai funcionar) 
 
 OBS.: Muito cuidado com o token gerado, pois pode dar acesso aos repositórios privados.
 
