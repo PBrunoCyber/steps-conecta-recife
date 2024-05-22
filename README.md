@@ -121,7 +121,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-all.zip
 ## CONECTA RECIFE
 
 * ATENÇÃO!!! Após ter feito todos esses passos sem erro algum, teremos que instalar o projeto (smisdk) do github, pois o Expo não reconhece plugins instalados localmente.
- - No package.json em dependencies altere a dependencia para o seguinte > "react-native-smisdk-plugin": git+https://<TOKEN>@github.com/<USER>/<REPO>.git#<BRANCH>    
+ - No package.json em dependencies altere a dependencia para o seguinte > "react-native-smisdk-plugin": git+https://[TOKEN]@github.com/[USER]/[REPO].git#[BRANCH]    
  - Para gerar o <TOKEN> faça o seguinte
     1. Acesse as configurações do GitHub
         Vá para GitHub e faça login na sua conta.
