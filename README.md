@@ -120,9 +120,9 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-all.zip
 
 ## CONECTA RECIFE
 
-* ATENÇÃO!!! Após ter feito todos esses passos sem erro algum, teremos que instalar o projeto (smisdk) do github, pois o Expo não reconhece plugins instalados localmente.
- - No package.json em dependencies altere a dependencia para o seguinte > "react-native-smisdk-plugin": git+https://[TOKEN]@github.com/[USER]/[REPO].git#[BRANCH]    
- - Para gerar o <TOKEN> faça o seguinte
+* ATENÇÃO!!! Após ter feito todos esses passos sem erro algum, teremos que instalar o projeto (smisdk) no package.json, pois o Expo não reconhece plugins instalados localmente.
+ - No package.json em dependencies altere a dependencia para o seguinte > ```"react-native-smisdk-plugin": git+https://[TOKEN]@github.com/[USER]/[REPO].git#[BRANCH]```   
+ - Para gerar o [TOKEN] faça o seguinte
     1. Acesse as configurações do GitHub
         Vá para GitHub e faça login na sua conta.
         No canto superior direito, clique na sua foto de perfil e depois em "Settings" (Configurações).
@@ -137,16 +137,17 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-all.zip
         Defina uma data de expiração para o token se desejar, ou deixe em branco para que o token não expire.
         Selecione as permissões que o token precisa. Para acessar repositórios privados, você geralmente precisa das seguintes permissões:
         repo (Acesso completo aos repositórios privados)
-        read:org (Ler a organização, se aplicável) 
-  
+        read:org (Ler a organização, se aplicável)
+    5. Exemplo > "react-native-smisdk-plugin": git+https://ghp_eNXyjAuETs8o7k0sIP9rZTh1NioUmb04H3Q8@github.com/PBrunoCyber/sd-react-native-smisdk-plugin.git#main (não use esse trecho, pois não vai funcionar) 
+
+OBS.: Muito cuidado com o token gerado, pois pode dar acesso aos repositórios privados.
+
 * Dê um `npm install` (É importante que seja o npm, pois o Expo usa o npm também)
 
 * Em `android/app/build.gradlew` mudar o trecho `implementation "com.datami:vpnsdk:+"` para `implementation "com.datami:smisdk:+"` dentro do corpo de `dependencies`.
 
 * Abra o Android Studio na pasta `android` do projeto Conecta Recife vá em Build > Make Project (Se der BUILD SUCCESSFUL vamos pro próximo passo!)
-
-
-
+  
 PASSO FINAL!! 
 
 * Execute `eas build -p android --profile preview`
